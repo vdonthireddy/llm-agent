@@ -1,0 +1,12 @@
+langchain-community 
+langchain-core
+langchain 
+langchainhub
+langchain-ollama
+langchain_experimental
+langgraph 
+tavily-python
+IPython
+Pillow
+image-in-terminal
+pydantic
