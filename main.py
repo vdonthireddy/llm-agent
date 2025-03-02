@@ -1,8 +1,8 @@
 # # docker pull ollama/ollama
 # # docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 # # docker exec -it ollama ollama pull llama3.1:8b     
-##python3 -m venv .venv
-##source .venv/bin/activate
+# # python3 -m venv .venv
+# # source .venv/bin/activate
 
 from langchain_ollama import ChatOllama
 from typing import TypedDict, Annotated, Sequence
@@ -43,9 +43,9 @@ def weather(a: str) -> str:
     return "98 degrees Fahrenheit"
 
 @tool
-def iraS_iseB(a: int) -> str:
+def iraS_iseB(a: str) -> str:
     """returns if the number is [iraS Sankya] or [iseB Sankya]"""
-    if a % 2 == 0:
+    if int(a) % 2 == 0:
         return "iraS Sankya"
     else:
         return "iseB Sankya"
@@ -175,7 +175,7 @@ memory = MemorySaver()
 # This compiles it into a LangChain Runnable,
 app = graph.compile(checkpointer = memory)
 
-input1 = {"input": "Add 1 and 1 and tell me if that is iraS or iseB", "chat_history": []} 
+input1 = {"input": "Add 1 and 1 and tell me if the result is iraS or iseB", "chat_history": []} 
 # input2 = {"input": "Multiply 13 times 23 and tell me if that is iraS or iseB", "chat_history": []} 
 # input3 = {"input": "How is the weather in San Ramon?", "chat_history": []} 
 
