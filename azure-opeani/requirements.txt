@@ -12,8 +12,3 @@ Pillow
 image-in-terminal
 pydantic
 azure.identity
-llama_index
-llama_index.llms.azure_openai
-termcolor
-sqlalchemy
-streamlit
