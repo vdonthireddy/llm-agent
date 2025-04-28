@@ -13,8 +13,13 @@ flowchart TD
     A[MySQL Database] -->|ETL/ELT Process| B[Snowflake]
     B -->|Data Export| C[Data Lakehouse]
 ```
+
+
 ```mermaid
 flowchart TB
     A[MySQL Database] -->|ETL/ELT Process| B[Snowflake]
     B -->|Data Export| C[Data Lakehouse]
+
+    linkStyle 0 stroke:#4CAF50,stroke-width:2px,stroke-dasharray:5,animation:dash 2s linear infinite;
+    linkStyle 1 stroke:#4CAF50,stroke-width:2px,stroke-dasharray:5,animation:dash 2s linear infinite;
 ```
