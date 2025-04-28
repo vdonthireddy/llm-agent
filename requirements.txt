@@ -18,3 +18,14 @@ termcolor
 sqlalchemy
 streamlit
 neo4j
+mcp
+mcp[cli]
+uvicorn
+torch>=1.9.0
+numpy>=1.20.0
+datasets
+transformers
+evaluate==0.4.2
+accelerate
+peft
+bitsandbytes
