@@ -7,19 +7,4 @@ docker exec -it ollama ollama pull llama3.1:8b
 python3 -m venv .venv
 source .venv/bin/activate
 ```
-
-```mermaid
-flowchart TD
-    A[MySQL Database] -->|ETL/ELT Process| B[Snowflake]
-    B -->|Data Export| C[Data Lakehouse]
-```
-
-
-```mermaid
-flowchart TB
-    A[MySQL Database] -->|ETL/ELT Process| B[Snowflake]
-    B -->|Data Export| C[Data Lakehouse]
-
-    linkStyle 0 stroke:#4CAF50,stroke-width:2px,stroke-dasharray:5,animation:dash 2s linear infinite;
-    linkStyle 1 stroke:#4CAF50,stroke-width:2px,stroke-dasharray:5,animation:dash 2s linear infinite;
-```
+![Workflow Diagram](./images/wf.svg "Workflow Diagram")
